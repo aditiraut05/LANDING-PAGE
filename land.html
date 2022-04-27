@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pepsi website landing page</title>
+    <link rel="stylesheet" href="style.css">
+</head>>
+
+<body>
+    <section class="sec">
+        <header>
+            <a href="a"><img src="logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">products</a></li>
+                <li><a href="#">whats new</a></li>
+                <li><a href="#">newsletter</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </header>
+        <div class="çontent">
+            <div class="textBox"></div>
+            <h2>THAT'S WHAT<br><span> I LIKE</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas metus vitae magna auctor
+                fermentum. Etiam non lacus eget augue elementum aliquam. Sed ut viverra ante, eu consequat mauris</p>
+            <a href="#">view all products</a>
+        </div>
+        <div class="imgBox">
+            <img src="pepsi001.png" class="pepsi">
+        </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="pepsi001.png" onclick="imgSlider('pepsi001.png');changeBgColor('#0062be')"></li>
+            <li><img src="pepsi002.png" onclick="imgSlider('pepsi002.png');changeBgColor('#e60c2c')"></li>
+            <li><img src="pepsi003.png" onclick="imgSlider('pepsi003.png');changeBgColor('#1e1e1e')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+            <li><a href="#"><img src="instagram.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.pepsi').src.anything
+        }
+        function changeBgColor(color) {
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script>
+
+
+</body>
+
+</html>
